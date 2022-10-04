@@ -1,6 +1,24 @@
-<input  type="submit" name = "send" value = "Capsules"></input>
-<input  type="submit" name = "send" value = "Launches"></input>
+import React from 'react';
+
+const Home = () => {
+    return(
+<Link to='/Capsules'>Capsules</Link>
+<Link to='/Launches'>Launches</Link>
+
+    )
+ 
+
+}
 
 
-<Link to='/Capsules' class="Clink">Capsules</Link>
-<Link to='/Launches' class="Clink">Launches</Link>
+
+
+
+
+
+
+
+
+
+
+ 
