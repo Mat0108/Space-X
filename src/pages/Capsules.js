@@ -24,12 +24,14 @@ const Capsules = () => {
                 <div className="card col-6  ">
                     <div className="card-body  ">
                         <h5 className="card-title ">
-                            mission : {capsule.capsule_serial}
+                            mission : {capsule.missions.map((element => element.name))}
                             </h5>
                             
-                        <div>
-                           <p>{capsule.type}</p>
-                           <p>{capsule.capsule_id}</p>
+                        <div class="card-text">
+                            <p>type : {capsule.type}</p>
+                            <p>status : {capsule.status}</p>
+                            <p>details : {capsule.details}</p>
+                            <p>launch date : {capsule.original_launch}</p>
                         </div>
                     </div>
                 </div>
