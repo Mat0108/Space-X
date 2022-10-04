@@ -1,7 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
+import { getLaunches } from './services/space-x';
 
 function App() {
+  const [capsules, setCapsules] = useState([]);   
+  useEffect(()=>{
+      const fetchData = async() =>{
+          const lescapsules = await getLaunches();
+          setCapsules(lescapsules);
+      };
+      fetchData();
+  },[]);
+  console.log(capsules);
   return (
     <div className="App">
       <header className="App-header">
