@@ -13,7 +13,7 @@ const Launches = () => {
     },[]);
 
     
-    console.log(Launches);
+    console.log(Launches[0].rocket);
 
     return (
         <div className="container">
@@ -28,7 +28,8 @@ const Launches = () => {
                             </h5>
                             
                         <div class="card-text">
-                            <p>core serial : {launche.core_serial} </p>
+                            <p>Premier Stage : {launche.rocket.first_stage.cores[0].core_serial} </p>
+                            <p>Second Stage : {launche.rocket.second_stage.payloads[0].payload_id} </p>
                             <p>mission name : {launche.mission_name} </p>
                             <p>flight_number : {launche.flight_number} </p>
                             <p>launch year : {launche.launch_year} </p>
