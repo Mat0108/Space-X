@@ -7,6 +7,7 @@ import {Route,Routes} from 'react-router';
 
 
 import Capsules from './pages/Capsules';
+import Launches from './pages/Launches';
 import Home from './pages/Home'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           <Routes>
               <Route path="/" element={<Home/>}></Route>
               <Route path="/Capsules" element ={<Capsules />}></Route>
-              <Route path="/Launches" element={<Capsules />}></Route>
+              <Route path="/Launches" element={<Launches />}></Route>
 
           </Routes>
       </Router>
