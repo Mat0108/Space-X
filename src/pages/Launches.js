@@ -3,6 +3,3 @@ import { useParams } from 'react-router'
 
 import { getLaunches } from '../services/space-x'
 
-const Launches = () => {
-    const 
-}
