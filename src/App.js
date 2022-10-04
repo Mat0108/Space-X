@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { getLaunches } from './services/space-x';
+import Home from "./"
 
 function App() {
   const [capsules, setCapsules] = useState([]);   
