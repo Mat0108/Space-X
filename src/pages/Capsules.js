@@ -21,10 +21,10 @@ const Capsules = () => {
         <h1 className="">Liste des capsules </h1>
         <div className="row align-items-start  ">
             {capsules.map((capsule) =>
-                <div className="card col-4  ">
+                <div className="card col-6  ">
                     <div className="card-body  ">
                         <h5 className="card-title ">
-                            {capsule.details}
+                            mission : {capsule.capsule_serial}
                             </h5>
                             
                         <div>
