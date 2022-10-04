@@ -12,6 +12,22 @@ import Home from './pages/Home';
 import Capsules from './pages/Capsules';
 import Launches from './pages/Launches';
 
+import './index.css';
+
+const App = () => {
+    
+    return <Router>
+            <div>
+                <Navbar />
+
+                <Routes>
+                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/launches" element={<Launches />}></Route>
+                    <Route path="/capsules" element={<Capsules />}></Route>
+                </Routes>
+            </div>
+    </Router>
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
