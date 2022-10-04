@@ -34,9 +34,9 @@ const Launches = () => {
                             <p>flight_number : {launche.flight_number} </p>
                             <p>launch year : {launche.launch_year} </p>
                             <p>rocket name : {launche.rocket.rocket_name} </p>
-                            <p>rocket type : {launche.rocket_type} </p>
-                            <p>landing type : {launche.landing_type} </p>
-                            <p>landing vehicle : {launche.landing_vehicle} </p>
+                            <p>rocket type : {launche.rocket.rocket_type} </p>
+                            {launche.rocket.first_stage.cores[0].landing_type !== null && <p >landing type : {launche.rocket.first_stage.cores[0].landing_type} </p>}
+                            {launche.rocket.first_stage.cores[0].landing_vehicle !== null && <p>landing vehicle : {launche.rocket.first_stage.cores[0].landing_vehicle} </p>}
                             <p>cap serial : {launche.cap_serial} </p>
                             <p>core flight : {launche.core_flight} </p>
                             <p>block : {launche.block} </p>
