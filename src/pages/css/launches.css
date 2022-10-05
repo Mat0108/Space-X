@@ -1,10 +1,10 @@
-.launches-image{
-    mix-blend-mode: multiply;
-    display: block;
-}
+
 .href{
     color: white;
     text-decoration: none;
+}
+.href:hover{
+    color: white;
 }
 
 .text{
@@ -15,16 +15,22 @@
     background-color:rgb(39, 44, 53);
 }
 .launches-card{
+    width: 650px;
+    height: 500px;
+    margin-right: 20px;
     background-color:rgb(39, 44, 53);   
 }
 .launches-title{
     margin-bottom: 30px;
 }
-.launches-body{
-    width: 800px;
-    height: 500px;  
+.launches-body{  
     background-color:rgb(165, 153, 153);
-    border-radius: 6px;
-
-    
+    border-radius: 6px;   
+}
+.launches-row{
+    width: 1600px;
+}
+.launches-image{
+    mix-blend-mode: multiply;
+    display: block;
 }
