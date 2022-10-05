@@ -46,7 +46,7 @@ const Launches = () => {
                         </div>
                         <div class="">
                             
-                                <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-6 launches-image" ></img>
+                                <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-7 launches-image" ></img>
                         </div>
                     </div>
                 </div>
