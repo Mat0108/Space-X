@@ -3,11 +3,13 @@
     border: none;
     color: white;
     padding: 15px 32px;
-    margin-top: 210px;
+    margin-top: 300px;
+    margin-left: 300px;
+    margin-right: 250px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 25px;
 }
 
  
