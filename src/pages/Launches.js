@@ -52,5 +52,6 @@ const Launches = () => {
         </div>
     )
 
-        return ( <
-                div className = "container" >
+            }
+
+export default Launches;
