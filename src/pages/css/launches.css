@@ -2,7 +2,25 @@
     mix-blend-mode: multiply;
     display: block;
 }
+.href{
+    color: white;
+    text-decoration: none;
+}
 
-.launches-text{
-    width: 400px;
+.text{
+    color : white;
+    text-align: center;
+}
+.launches-global{
+    background-color:rgb(39, 44, 53);
+}
+.launches-card{
+    background-color:rgb(39, 44, 53);
+    
+}
+.launches-body{
+    width: 600px;
+    height: 500px;  
+    background-color:rgb(165, 153, 153);
+    
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { getCapsules } from '../services/space-x';
 import "./css/capsules.css";
+import { Link } from "react-router-dom";
 
 const Capsules = () => {
     const [capsules, setCapsules] = useState([]);   
@@ -15,11 +16,12 @@ const Capsules = () => {
 
     
     console.log(capsules);
-
+    
+    let fleche = "<--";
     return (
         <div className="container">
             
-        <h1 className="text">Liste des capsules </h1>
+        <h1 className="text"><Link class="href" to='/'>{fleche} </Link>Liste des capsules </h1>
         <div className="row align-items-start capsule-global ">
             {capsules.map((capsule) =>
                 <div className="card col-3 capsule-card  ">
