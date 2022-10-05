@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/launches.css';
+import './css/launches.css';
 
 import { useEffect, useState } from 'react';
 import { getLaunches } from '../services/space-x';
