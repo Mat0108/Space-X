@@ -26,7 +26,7 @@ const Launches = () => {
                 <div className="card col-6  launches-card">
                     <div className="card-body launches-body ">
                         <h5 className="card-title ">
-                        {/* {launche.details} */}
+                        { {launche.details}}
                             </h5>
                             
                         <div class="card-text col-8 launches-text">
