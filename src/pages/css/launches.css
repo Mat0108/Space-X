@@ -15,14 +15,16 @@
     background-color:rgb(39, 44, 53);
 }
 .launches-card{
-    background-color:rgb(39, 44, 53);
-    
+    background-color:rgb(39, 44, 53);   
+}
+.launches-title{
+    margin-bottom: 30px;
 }
 .launches-body{
     width: 600px;
     height: 500px;  
     background-color:rgb(165, 153, 153);
-    border-radius: 8px;
+    border-radius: 6px;
 
     
 }
