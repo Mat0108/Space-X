@@ -1,0 +1,15 @@
+.text{
+    color : white;
+    text-align: center;
+}
+.capsule-global{
+    width : 100/2%;
+    height: 200px;
+    background-color:rgba(24, 29, 39, 0.932);
+}
+.capsule-card{
+    font-size: medium;
+    margin-right: 50px;
+    background-color:rgb(165, 153, 153);
+    
+}

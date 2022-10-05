@@ -19,10 +19,10 @@ const Capsules = () => {
     return (
         <div className="container">
             
-        <h1 className="">Liste des capsules </h1>
-        <div className="row align-items-start  ">
+        <h1 className="text">Liste des capsules </h1>
+        <div className="row align-items-start capsule-global ">
             {capsules.map((capsule) =>
-                <div className="card col-6  ">
+                <div className="card col-5 capsule-card  ">
                     <div className="card-body  ">
                         <h5 className="card-title ">
                             mission : {capsule.missions.map((element => element.name))}
