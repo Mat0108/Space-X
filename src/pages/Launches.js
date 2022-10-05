@@ -35,7 +35,7 @@ const Launches = () => {
                                 <p>Flight number : {launche.flight_number} - Launch year : {launche.launch_year} </p>
                                 <p>Rocket name : {launche.rocket.rocket_name} - Rocket type : {launche.rocket.rocket_type} </p>
                                 {launche.rocket.second_stage.payloads[0].payload_type !== null && <p>Payload type : {launche.rocket.second_stage.payloads[0].payload_type} - Orbit : {launche.rocket.second_stage.payloads[0].orbit} </p>}
-                                {launche.rocket.first_stage.cores[0].landing_vehicle !== null && <p>Landing vehicle : {launche.rocket.first_stage.cores[0].landing_vehicle} </p>}
+                                {launche.rocket.first_stage.cores[0].landing_vehicle !== null && <p>Landing vehicle : {launche.rocket.first_stage.cores[0].landing_vehicle} - mass : {launche.rocket.second_stage.payloads[0].payload_mass_kg} kg </p>}
                                 <p>Site name : {launche.launch_site.site_name_long} </p>
                             </div>
                             <div class="col-3">
