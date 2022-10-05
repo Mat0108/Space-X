@@ -23,7 +23,7 @@ const Capsules = () => {
         <div className="row align-items-start capsule-global ">
             {capsules.map((capsule) =>
                 <div className="card col-5 capsule-card  ">
-                    <div className="card-body  ">
+                    <div className="card-body capsule-body  ">
                         <h5 className="card-title ">
                             mission : {capsule.missions.map((element => element.name))}
                             </h5>
