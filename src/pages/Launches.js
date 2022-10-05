@@ -25,14 +25,15 @@ const Launches = () => {
             {Launches.map((launche) =>
                 <div className="card col-6  launches-card">
                     <div className="card-body launches-body ">
-                        <h5 className="card-title ">
-                         {launche.details}
+                        <h5 className="card-title launches-title">
+                        Nom de la mission : {launche.mission_name} 
+                                
                             </h5>
                             
                         <div class="card-text col-8 launches-text">
                             <div>
                                 <p>Premier Stage : {launche.rocket.first_stage.cores[0].core_serial } </p>
-                                <p>Mission name : {launche.mission_name} </p>
+                                <p>Second Stage : {launche.rocket.second_stage.payloads[0].payload_id} </p>
                                 <p>Flight number : {launche.flight_number} </p>
                                 <p>Launch year : {launche.launch_year} </p>
                                 <p>Rocket name : {launche.rocket.rocket_name} - Rocket type : {launche.rocket.rocket_type} </p>
@@ -42,7 +43,7 @@ const Launches = () => {
                                 <p>Site name : {launche.launch_site.site_name} </p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="">
                             
                                 <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-6 launches-image" ></img>
                         </div>
