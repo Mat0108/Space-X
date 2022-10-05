@@ -1,4 +1,6 @@
 import React from 'react';
+import './Launches.css';
+
 import { useEffect, useState } from 'react';
 import { getLaunches } from '../services/space-x';
 
