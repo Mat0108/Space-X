@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { getCapsules } from '../services/space-x';
+import "../css/capsules.css";
 
 const Capsules = () => {
     const [capsules, setCapsules] = useState([]);   
