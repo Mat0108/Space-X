@@ -24,7 +24,7 @@ const Launches = () => {
                 <div className="card col-6  ">
                     <div className="card-body  ">
                         <h5 className="card-title ">
-                        {launche.details}
+                        {/* {launche.details} */}
                             </h5>
                             
                         <div class="card-text col-8 launches-text">
@@ -36,17 +36,19 @@ const Launches = () => {
                                 <p>Launch year : {launche.launch_year} </p>
                                 <p>Rocket name : {launche.rocket.rocket_name} </p>
                                 <p>Rocket type : {launche.rocket.rocket_type} </p>
-                                {launche.rocket.second_stage.payloads[0].payload_type !== null && <p>payload type : {launche.rocket.second_stage.payloads[0].payload_type} </p>}
-                                {launche.rocket.second_stage.payloads[0].orbit !== null && <p>payload type : {launche.rocket.second_stage.payloads[0].orbit} </p>}
-                                {launche.rocket.first_stage.cores[0].landing_type !== null && <p >landing type : {launche.rocket.first_stage.cores[0].landing_type} </p>}
-                                {launche.rocket.first_stage.cores[0].landing_vehicle !== null && <p>landing vehicle : {launche.rocket.first_stage.cores[0].landing_vehicle} </p>}
-                                <p>Site name : {launche.launch_site.site_name} </p>
-                                <p>reason : {} </p>
+                                {launche.rocket.second_stage.payloads[0].payload_type !== null && <p>Payload type : {launche.rocket.second_stage.payloads[0].payload_type} </p>}
+                                {launche.rocket.second_stage.payloads[0].orbit !== null && <p>Orbit : {launche.rocket.second_stage.payloads[0].orbit} </p>}
+                                {launche.rocket.first_stage.cores[0].landing_type !== null && <p >Landing type : {launche.rocket.first_stage.cores[0].landing_type} </p>}
+                                {launche.rocket.first_stage.cores[0].landing_vehicle !== null && <p>Landing vehicle : {launche.rocket.first_stage.cores[0].landing_vehicle} </p>}
+                                <p>Site name : {launche.launch_site.site_name_long} </p>
+                                {launche.details !== null && <p class="lh-1">Détails : {launche.details}</p>}
+                                
+                
                             </div>
                         </div>
                         <div class="col-3">
                             
-                                <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-3 launches-image" ></img>
+                                <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-6 launches-image" ></img>
                         </div>
                     </div>
                 </div>
