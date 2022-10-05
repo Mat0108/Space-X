@@ -5,11 +5,16 @@
 .capsule-global{
     width : 100/2%;
     height: 200px;
-    background-color:rgba(24, 29, 39, 0.932);
+    background-color:rgb(39, 44, 53);
 }
 .capsule-card{
-    font-size: medium;
     margin-right: 50px;
+    background-color:rgb(39, 44, 53);
+    
+}
+.capsule-body{
+    
+    font-size: 20px;
     background-color:rgb(165, 153, 153);
     
 }
