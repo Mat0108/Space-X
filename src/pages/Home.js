@@ -5,14 +5,20 @@ import './css/home.css';
 
 const Home = () => {
     return(
-        <><Link to='/Capsules'>Capsules</Link>
+ 
+        <><Link class ="styled" to='/Capsules'>Capsules</Link>
         
-        <Link to='/Launches'>Launches</Link></>
+        <Link class ="styled" to='/Launches'>Launches</Link></>
+        
 
     )
+    
  
 
 }
+ 
+
+
 
 export default Home;
 
