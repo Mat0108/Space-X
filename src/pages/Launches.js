@@ -40,7 +40,7 @@ const Launches = () => {
                                 <p>Site name : {launche.launch_site.site_name_long} </p>
                             </div>
                             <div class="col-4">
-                                <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-7 launches-image" ></img>
+                                <img src={launche.links.mission_patch} alt={launche.mission_name} class="launches-image" ></img>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,6 @@ const Launches = () => {
         </div>
         </div>
     )
-
             }
 
 export default Launches;
