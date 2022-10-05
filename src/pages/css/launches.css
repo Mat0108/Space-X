@@ -15,12 +15,14 @@
     background-color:rgb(39, 44, 53);
 }
 .launches-card{
-    width: 650px;
-    height: 500px;
+    width: 700px;
+    height: 400px;
     margin-right: 20px;
+    margin-bottom: 20px;
     background-color:rgb(39, 44, 53);   
 }
 .launches-title{
+    margin-bottom: 30px;
     margin-bottom: 30px;
 }
 .launches-body{  
@@ -33,4 +35,7 @@
 .launches-image{
     mix-blend-mode: multiply;
     display: block;
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
 }
