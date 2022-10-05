@@ -39,7 +39,7 @@ const Launches = () => {
                             {/* <p>orbit : {launche.orbit} </p> */}
                             {launche.rocket.first_stage.cores[0].landing_type !== null && <p >landing type : {launche.rocket.first_stage.cores[0].landing_type} </p>}
                             {launche.rocket.first_stage.cores[0].landing_vehicle !== null && <p>landing vehicle : {launche.rocket.first_stage.cores[0].landing_vehicle} </p>}
-                            <p>Site name : {launche.launch_site.site_name} </p>
+                            <p>Site name : {launche.launch_site.site_name_long} </p>
                             {/* <p>reason : {launche.reason} </p> */}
                             <p>Mission_patch : {launche.links.mission_patch} </p>
                             <p></p>
