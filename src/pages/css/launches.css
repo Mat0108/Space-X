@@ -1,0 +1,8 @@
+.launches-image{
+    mix-blend-mode: multiply;
+    display: block;
+}
+
+.launches-text{
+    width: 400px;
+}

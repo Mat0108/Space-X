@@ -3,17 +3,17 @@
     text-align: center;
 }
 .capsule-global{
-    width : 100/2%;
-    height: 200px;
     background-color:rgb(39, 44, 53);
 }
 .capsule-card{
     margin-right: 50px;
+    margin-left: 50px;
     background-color:rgb(39, 44, 53);
     
 }
 .capsule-body{
-    
+    width: 400px;
+    height: 300px;   
     font-size: 20px;
     background-color:rgb(165, 153, 153);
     

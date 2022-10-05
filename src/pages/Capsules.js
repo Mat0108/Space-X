@@ -22,7 +22,7 @@ const Capsules = () => {
         <h1 className="text">Liste des capsules </h1>
         <div className="row align-items-start capsule-global ">
             {capsules.map((capsule) =>
-                <div className="card col-5 capsule-card  ">
+                <div className="card col-3 capsule-card  ">
                     <div className="card-body capsule-body  ">
                         <h5 className="card-title ">
                             mission : {capsule.missions.map((element => element.name))}
@@ -31,7 +31,7 @@ const Capsules = () => {
                         <div class="card-text">
                             <p>type : {capsule.type}</p>
                             <p>status : {capsule.status}</p>
-                            <p>details : {capsule.details}</p>
+                            {capsule.details != null && <p>details : {capsule.details}</p>}
                             <p>launch date : {capsule.original_launch}</p>
                         </div>
                     </div>
