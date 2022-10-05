@@ -28,7 +28,7 @@ const Launches = () => {
                             </h5>
                             
                         <div class="card-text">
-                            <p>Premier Stage : {launche.rocket.first_stage.cores[0].core_serial} </p>
+                            <p>Premier Stage : {launche.rocket.first_stage.cores[0].core_serial } </p>
                             <p>Second Stage : {launche.rocket.second_stage.payloads[0].payload_id} </p>
                             <p>Mission name : {launche.mission_name} </p>
                             <p>Flight number : {launche.flight_number} </p>
@@ -42,6 +42,8 @@ const Launches = () => {
                             <p>Site name : {launche.launch_site.site_name} </p>
                             <p>reason : {} </p>
                             <p>Mission_patch : {launche.links.mission_patch} </p>
+                            <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-3 Pimage" >
+                    </img>
                             <p></p>
                         </div>
                     </div>
