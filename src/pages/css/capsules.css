@@ -4,17 +4,20 @@
 }
 .capsule-global{
     background-color:rgb(39, 44, 53);
+ 
 }
 .capsule-card{
     margin-right: 50px;
     margin-left: 50px;
     background-color:rgb(39, 44, 53);
-    
+     
 }
 .capsule-body{
     width: 400px;
     height: 300px;   
     font-size: 20px;
-    background-color:rgb(165, 153, 153);
+    background-color:rgb(209, 197, 197);
+    border-radius: 8px;
+
     
 }
