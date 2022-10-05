@@ -3,17 +3,15 @@ import { useEffect, useState } from 'react';
 import { getLaunches } from '../services/space-x';
 
 const Launches = () => {
-    const [Launches, setLaunches] = useState([]);   
-    useEffect(()=>{
-        const fetchData = async() =>{
-            const leslaunches = await getLaunches();
-            setLaunches(leslaunches);
-        };
-        fetchData();
-    },[]);
+        const [Launches, setLaunches] = useState([]);
+        useEffect(() => {
+            const fetchData = async() => {
+                const leslaunches = await getLaunches();
+                setLaunches(leslaunches);
+            };
+            fetchData();
+        }, []);
 
-    
-    console.log(Launches[0].rocket);
 
     return (
         <div className="container">
@@ -54,6 +52,5 @@ const Launches = () => {
         </div>
     )
 
-}
-
-export default Launches;
+        return ( <
+                div className = "container" >
