@@ -29,18 +29,17 @@ const Launches = () => {
                         Nom de la mission : {launche.mission_name} 
                         </h5>
                         <div class="row">
-                            <div class="card-text col-6 launches-text">
+                            <div class="card-text col-7 launches-text">
                                 <p>Premier Stage : {launche.rocket.first_stage.cores[0].core_serial } </p>
                                 <p>Second Stage : {launche.rocket.second_stage.payloads[0].payload_id} </p>
                                 <p>Flight number : {launche.flight_number} - Launch year : {launche.launch_year} </p>
                                 <p>Rocket name : {launche.rocket.rocket_name} - Rocket type : {launche.rocket.rocket_type} </p>
                                 {launche.rocket.second_stage.payloads[0].payload_type !== null && <p>Payload type : {launche.rocket.second_stage.payloads[0].payload_type} - Orbit : {launche.rocket.second_stage.payloads[0].orbit} </p>}
-                                {launche.rocket.first_stage.cores[0].landing_type !== null && <p >Landing type : {launche.rocket.first_stage.cores[0].landing_type} </p>}
                                 {launche.rocket.first_stage.cores[0].landing_vehicle !== null && <p>Landing vehicle : {launche.rocket.first_stage.cores[0].landing_vehicle} </p>}
                                 <p>Site name : {launche.launch_site.site_name_long} </p>
                             </div>
-                            <div class="col-4">
-                                <img src={launche.links.mission_patch} alt={launche.mission_name} class="launches-image" ></img>
+                            <div class="col-3">
+                                <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-7 launches-image" ></img>
                             </div>
                         </div>
                     </div>

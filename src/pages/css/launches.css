@@ -35,6 +35,7 @@
 .launches-image{
     mix-blend-mode: multiply;
     display: block;
+    margin-top: 50px;
     margin-left: 30px;
     width: 200px;
     height: 200px;
