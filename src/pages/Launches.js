@@ -39,7 +39,7 @@ const Launches = () => {
                                 <p>Site name : {launche.launch_site.site_name_long} </p>
                             </div>
                             <div class="col-3">
-                                <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-7 launches-image" ></img>
+                                {launche.links.mission_patch !== null && <img src={launche.links.mission_patch} alt={launche.mission_name} class=" col-7 launches-image" ></img>}
                             </div>
                         </div>
                     </div>
