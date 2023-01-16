@@ -11,11 +11,14 @@
     color : white;
     text-align: center;
 }
+.launches-text{
+    font-size:12px
+}
 .launches-global{
     background-color:rgb(39, 44, 53);
 }
 .launches-card{
-    width: 700px;
+    width: 650px;
     height: 450px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -30,13 +33,13 @@
     border-radius: 6px;   
 }
 .launches-row{
-    width: 1600px;
+    width: 1400px;
 }
 .launches-image{
     mix-blend-mode: multiply;
     display: block;
     margin-top: 50px;
-    margin-left: 30px;
+    
     width: 200px;
     height: 200px;
 }

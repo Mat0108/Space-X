@@ -9,15 +9,17 @@ const Capsules = () => {
     useEffect(()=>{
         const fetchData = async() =>{
             const lescapsules = await getCapsules();
+            
+            console.log('lescapsules : ', lescapsules)
             setCapsules(lescapsules);
         };
         fetchData();
     },[]);
 
     
-    console.log(capsules);
     
     let fleche = "<--";
+
     return (
         <div className="container">
             
@@ -27,14 +29,14 @@ const Capsules = () => {
                 <div className="card col-3 capsule-card  ">
                     <div className="card-body capsule-body  ">
                         <h5 className="card-title ">
-                            mission : {capsule.missions.map((element => element.name))}
+                            Capsule : {capsule.type}
                             </h5>
                             
                         <div class="card-text">
-                            <p>type : {capsule.type}</p>
+                            <p>last update : {capsule.last_update}</p>
                             <p>status : {capsule.status}</p>
                             {capsule.details != null && <p>details : {capsule.details}</p>}
-                            <p>launch date : {capsule.original_launch}</p>
+                            {capsule.original_launch && <p>launch date : {capsule.original_launch}</p>}
                         </div>
                     </div>
                 </div>

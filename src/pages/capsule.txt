@@ -1,17 +1,1 @@
-{
-    "capsule_serial": "C102",
-    "capsule_id": "dragon1",
-    "status": "retired",
-    "original_launch": "2012-05-22T07:44:00.000Z",
-    "original_launch_unix": 1335944640,
-    "missions": [
-        {
-            "name": "COTS 2",
-            "flight": 8
-        }
-    ],
-    "landings": 1,
-    "type": "Dragon 1.0",
-    "details": "First Dragon spacecraft",
-    "reuse_count": 0
-}
+ 
