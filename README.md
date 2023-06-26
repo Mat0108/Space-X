@@ -12,3 +12,8 @@
 ## Tech
 - React
 - Api SpaceX
+
+## How to launch the project : 
+
+Build command : docker build -t space-x . 
+Run command : docker run -d -p 3000:3000 space-x
