@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.center {
+@apply align-middle justify-center items-center content-center;
+}
+.justified {
+@apply justify-center;
+}
+.aligned {
+@apply align-middle items-center content-center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Montserrat;
+  src: url(../public/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: MontserratDemi;
+  src: url(../public/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: MontserratExtraBold;
+  src: url(../public/fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(../public/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: MontesseratBoldItalic;
+  src: url(../public/fonts/Montserrat-BoldItalic.ttf);
 }

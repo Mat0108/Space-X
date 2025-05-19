@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { getCapsules } from '../services/space-x';
-import "./css/capsules.css";
 import { Link } from "react-router-dom";
 
 const Capsules = () => {

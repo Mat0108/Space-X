@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/launches.css';
+// import './css/w.css';
 
 import { useEffect, useState } from 'react';
 import { getLaunches } from '../services/space-x';
@@ -7,23 +7,22 @@ import { Link } from "react-router-dom";
 import LauncheComposant from './../composants/LauncheComposant';
 
 const Launches = () => {
-        const [Launches, setLaunches] = useState([]);
+        const [launchs, setLaunchs] = useState([]);
         useEffect(() => {
             const fetchData = async() => {
-                const leslaunches = await getLaunches();
+                const leslaunchs = await getLaunches();
 
-                setLaunches(leslaunches);
+                setLaunchs(leslaunchs);
             };
             fetchData();
         }, []);
 
-    let fleche = "<--";
     return (
-        <div className="container">
-            
-            <h1 className="text"><Link class="href" to='/'>{fleche} </Link>Liste des Launches </h1>
-            <div className="row launches-row ">
-                {Launches.map((launche) => <LauncheComposant launche={launche}/>)}
+        <div className="relative w-full h-full">
+            <div className='absolute top-2 left-2  z-10'><Link to="/" className='text-2xl font-mt-bold px-2 py-1 bg-blue text-white rounded-full z-10 '>{"<"}</Link></div>
+            <h1 className="">Liste des Launches </h1>
+            <div className=" h-full flex flex-row flex-wrap gap-8 justify-between overflow-auto z-0 p-12">
+                {launchs.length !== 0 && launchs.map((launch) => <LauncheComposant launch={launch}/>)}
             </div>
         </div>
     )

@@ -3,15 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {
-  BrowserRouter as Router,
-} from "react-router-dom"; 
-
-import { Route, Routes } from "react-router";
-import Home from './pages/Home';
-import Capsules from './pages/Capsules';
-import Launches from './pages/Launches';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

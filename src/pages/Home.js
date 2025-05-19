@@ -1,32 +1,30 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import './css/home.css';
+
 
 
 const Home = () => {
     return(
         
-        <>
-        <h5 className="text">Space X wiki</h5>
-        <div className='div row'>
-            <div className='col-3'></div>
-            <div className='col-2 size'>                
-                <div className='row'>
-                    <Link className ="styled launche col-6" to='/Capsules'>Capsules</Link>
-                    <img src={"https://library.kissclipart.com/20180830/hbe/kissclipart-space-capsule-vector-clipart-space-capsule-spacecr-a896752b7621df22.png"} alt={"fusée"} class="col-3 image capsule-image" ></img>
+        <div className='text-white flex relative text-white '>
+            <div className='absolute top-0 left-0 w-screen h-screen z-0 '><img src="/background.png" alt="background" className='w-full h-full'/></div>
+            <div className='z-10 w-screen flex flex-col relative'>
+                <h5 className="absolute top-0 left-0 p-2 w-screen flex center text-4xl font-mt-bold "><p>Space X wiki</p></h5>
+                <div className='flex flex-row  '>
+                    <div className='w-1/2 h-screen flex flex-col gap-2 center text-black_true '>
+                            <Link className ="bg-black_darked text-white text-4xl font-mt-bold p-4 rounded-3xl" to='/Launches'>Launches</Link>
+                          <p> Find out all the information you need about launches</p>
+                    </div>
+                    <div className='w-1/2 h-screen flex flex-col gap-2 center text-black_true '>                
+                            <Link className ="bg-black_darked text-white text-4xl font-mt-bold p-4 rounded-3xl" to='/Capsules'>Capsules</Link>
+                            <p>Find out all the information you need about  capsules</p>
+                    </div>
+                    
+  
                 </div>
             </div>
             
-            <div className='col-2'></div>
-            <div className='col-2 size'>
-                <div className='row'>
-                    <Link className ="styled launche col-6" to='/Launches'>Launches</Link>
-                    <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ8ZxnYNep4PQ5mW2tRlXmCoH-ecARSBjdsc4h3aeEGCWE1QdXgv5PvKxoF9BBBXgKyf8&usqp=CAU"} alt={"fusée"} class="col-3 image" ></img>
-            
-                </div>
-            </div>
         </div>
-        </>
         
 
     )
