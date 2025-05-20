@@ -20,3 +20,12 @@ export const getOneCapsule = async(id) =>{
     const res = await axios.get(`https://api.spacexdata.com/v4/capsules/${id}`);
     return res.data;    
 }
+export const getPayload = async(id) =>{
+    const res = await axios.get(`https://api.spacexdata.com/v4/payloads/${id}`);
+    return res.data;
+}
+
+export const getLaunch = async(id)=>{
+    const res = await axios.get(`https://api.spacexdata.com/v4/launches/${id}`);
+    return res.data;
+}

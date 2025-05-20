@@ -1,40 +1,46 @@
 import React, { useMemo } from 'react';
 
 import { useEffect, useState } from 'react';
-import { getRocket,getLaunchpads,getOneCapsule } from '../services/space-x';
+import { getRocket,getLaunchpads,getOneCapsule, getPayload } from '../services/space-x';
 import Loading from './Loading';
 
-const LauncheComposant = ({launch}) => {
+const LauncheComposant = ({launch,color}) => {
+        
         // console.log('launche : ', launche)
         const [launchpads, setlaunchpads] = useState([]);
         const [rocket, setRockets] = useState([]); 
         const [capsule,setCapsule] = useState([]);
+        const [payload,setPayload] = useState([])
         const [isLoading, setIsLoading] = useState(true);
         useEffect(() => {
+            // console.log(launch)
 
-
-            const fetchData = async(launchpad,rocket,capsule) => {
+            const fetchData = async(launchpad,rocket,capsule,payload) => {
                 setlaunchpads(await getLaunchpads(launchpad).name)
                 setRockets(await getRocket(rocket))
                 if(capsule){
                     setCapsule(await getOneCapsule(capsule))
                 }
+                // if(payload){
+                //     setPayload(await getPayload(payload));
+                // }
+                
                 setIsLoading(false);
             };
 
-            fetchData(launch.launchpad,launch.rocket,launch.capsules[0])
+            fetchData(launch.launchpad,launch.rocket,launch.capsules[0],launch.payloads[0])
         }, [launch]);
     function convertBurnTime(time){
         return "temps de combustion :   "+Math.floor(time/60)+" min et "+time%60+" s"
     }
     const elem = useMemo(()=>{
         if(isLoading ){
-            return <div className='w-[630px] h-[290px] flex center bg-black_grey text-white relative p-8 rounded-2xl'>
+            return <div className={`w-[630px] h-[290px] flex center  text-white relative p-8 rounded-2xl`} style={{backgroundColor: color}}>
                 <Loading />
             </div>
         }else{
             return (
-            <div className="flex flex-col bg-black_grey text-white w-[630px] h-[290px] relative p-8 rounded-2xl">
+            <div className={`flex flex-col ${color ??  "bg-black_grey"} text-white w-[630px] h-[290px] relative p-8 rounded-2xl`} style={{backgroundColor: color}}>
                 <h5 className="">
                     <span className='font-mt-bold'>Mission name : </span>{launch.name} 
                 </h5>
